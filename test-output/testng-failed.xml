@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Suite]" parallel="classes">
+  <parameter name="language" value="French"/>
+  <test thread-count="5" verbose="10" name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="testcase.ViewLeadtestCase">
+        <methods>
+          <include name="viewLead_02" invocation-numbers="0"/>
+          <include name="launchBrowser"/>
+          <include name="setfile"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcase.ViewLeadtestCase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" verbose="10" name="Test1(failed)" parallel="classes">
+    <classes>
+      <class name="testcase.ViewLeadtestCase">
+        <methods>
+          <include name="viewLead_02" invocation-numbers="0"/>
+          <include name="launchBrowser"/>
+          <include name="setfile"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcase.ViewLeadtestCase -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
